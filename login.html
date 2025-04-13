@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login | VTU Consortium Digital Library</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="top-bar">
+            <div class="container">
+                <div class="logo-section">
+                    <img src="logo.jpeg" alt="VTU Logo" class="logo-img">
+                    <span class="brand">VTU Consortium Digital Library</span>
+                </div>
+                <div class="contact-info">
+                    <span>Email: library@vtu.ac.in</span>
+                    <span>Phone: +91-831-2498234</span>
+                </div>
+            </div>
+        </div>
+        <nav>
+            <div class="container">
+                <div class="logo">
+                    <i class="fas fa-book"></i>
+                    <span class="neon-text">Library Portal</span>
+                </div>
+                <div class="mobile-controls">
+                    <button id="search-toggle"><i class="fas fa-search"></i></button>
+                    <button id="menu-toggle"><i class="fas fa-bars"></i></button>
+                </div>
+                <div class="nav-links">
+                    <a href="index.html">Home</a>
+                    <a href="e-resources.html">E-Resources</a>
+                    <a href="journals.html">Journals</a>
+                    <a href="notifications.html">
+                        <i class="fas fa-bell"></i> Notifications
+                    </a>
+                    <div class="auth-buttons">
+                        <div class="dropdown">
+                            <button class="dropdown-btn btn-login">Login <i class="fas fa-caret-down"></i></button>
+                            <div class="dropdown-content">
+                                <a href="login.html?type=student">Student Login</a>
+                                <a href="login.html?type=librarian">Librarian Login</a>
+                                <a href="login.html?type=committee">Committee Member Login</a>
+                                <a href="login.html?type=principal">Principal Login</a>
+                                <a href="login.html?type=admin">Admin Login</a>
+                            </div>
+                        </div>
+                        <a href="signup.html" class="btn-signup">Signup</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <div id="mobile-search" class="hidden">
+            <div class="container">
+                <div class="search-box">
+                    <input type="text" placeholder="Search resources...">
+                    <i class="fas fa-search"></i>
+                </div>
+            </div>
+        </div>
+        <div id="mobile-menu" class="hidden">
+            <div class="container">
+                <a href="index.html">
+                    <i class="fas fa-home"></i> Home
+                </a>
+                <a href="e-resources.html">
+                    <i class="fas fa-graduation-cap"></i> E-Resources
+                </a>
+                <a href="journals.html">
+                    <i class="fas fa-book"></i> Journals
+                </a>
+                <a href="notifications.html">
+                    <i class="fas fa-bell"></i> Notifications
+                </a>
+                <div class="dropdown mobile-dropdown">
+                    <a href="#" class="mobile-login dropdown-btn">
+                        <i class="fas fa-user"></i> Login <i class="fas fa-caret-down"></i>
+                    </a>
+                    <div class="dropdown-content">
+                        <a href="login.html?type=student">Student Login</a>
+                        <a href="login.html?type=librarian">Librarian Login</a>
+                        <a href="login.html?type=committee">Committee Member Login</a>
+                        <a href="login.html?type=principal">Principal Login</a>
+                        <a href="login.html?type=admin">Admin Login</a>
+                    </div>
+                </div>
+                <a href="signup.html" class="mobile-signup">
+                    Signup
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <div class="auth-container">
+            <h1>Login to Your Account</h1>
+            <div id="login-type-indicator" class="login-type-badge">Student Login</div>
+            <form id="login-form">
+                <div class="form-group">
+                    <label for="email">Email Address</label>
+                    <div class="input-with-icon">
+                        <input type="email" id="email" name="email" placeholder="Enter your email" required>
+                        <i class="fas fa-envelope"></i>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="password">Password</label>
+                    <div class="input-with-icon">
+                        <input type="password" id="password" name="password" placeholder="Enter your password" required>
+                        <i class="fas fa-lock"></i>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div style="display: flex; justify-content: space-between; align-items: center;">
+                        <div>
+                            <input type="checkbox" id="remember" name="remember">
+                            <label for="remember" style="display: inline; margin-left: 5px;">Remember me</label>
+                        </div>
+                        <a href="#" style="color: #ff6600;">Forgot password?</a>
+                    </div>
+                </div>
+                <div class="form-actions">
+                    <button type="submit">Login</button>
+                </div>
+                <div class="form-footer">
+                    Don't have an account? <a href="signup.html">Sign up</a>
+                </div>
+            </form>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-top">
+            <div class="container">
+                <div class="footer-columns">
+                    <div class="footer-column">
+                        <h3>About Us</h3>
+                        <p>VTU Consortium Digital Library provides access to a wide range of academic resources for students, faculty, and researchers.</p>
+                    </div>
+                    <div class="footer-column">
+                        <h3>Quick Links</h3>
+                        <ul>
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="e-resources.html">E-Resources</a></li>
+                            <li><a href="journals.html">Journals</a></li>
+                            <li><a href="notifications.html">Notifications</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h3>Contact Us</h3>
+                        <ul class="contact-info">
+                            <li><i class="fas fa-map-marker-alt"></i> VTU Main Campus, Belagavi, Karnataka</li>
+                            <li><i class="fas fa-phone"></i> +91-831-2498234</li>
+                            <li><i class="fas fa-envelope"></i> library@vtu.ac.in</li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h3>Follow Us</h3>
+                        <div class="social-links">
+                            <a href="#"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                            <a href="#"><i class="fab fa-instagram"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="container">
+                <p>&copy; 2023 VTU Consortium Digital Library. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script src="admin-login.js"></script>
+    <script>
+        // Login form handler
+        document.getElementById('login-form').addEventListener('submit', function(e) {
+            e.preventDefault();
+            const email = document.getElementById('email').value;
+            const password = document.getElementById('password').value;
+            
+            // In a real application, you would send this data to a server
+            alert(`Login attempt with email: ${email}\nIn a real application, this would be sent to the server.`);
+            
+            // Simulating successful login for demo purposes
+            window.location.href = 'index.html';
+        });
+
+        // Get login type from URL parameter
+        window.addEventListener('DOMContentLoaded', () => {
+            const urlParams = new URLSearchParams(window.location.search);
+            const loginType = urlParams.get('type') || 'student';
+            
+            const loginTypeMap = {
+                'student': 'Student Login',
+                'librarian': 'Librarian Login',
+                'committee': 'Committee Member Login',
+                'principal': 'Principal Login',
+                'admin': 'Administrator Login'
+            };
+            
+            const loginTypeDisplay = loginTypeMap[loginType] || 'Student Login';
+            document.getElementById('login-type-indicator').textContent = loginTypeDisplay;
+            document.title = `${loginTypeDisplay} | VTU Consortium Digital Library`;
+            
+            // Pre-fill admin email for testing purposes (remove in production)
+            if (loginType === 'admin') {
+                document.getElementById('email').value = 'admin@vtu.ac.in';
+                document.getElementById('email').setAttribute('placeholder', 'Enter admin email');
+            } else if (loginType === 'librarian') {
+                document.getElementById('email').setAttribute('placeholder', 'Enter librarian email');
+            } else if (loginType === 'committee') {
+                document.getElementById('email').setAttribute('placeholder', 'Enter committee member email');
+            } else if (loginType === 'principal') {
+                document.getElementById('email').setAttribute('placeholder', 'Enter principal email');
+            }
+        });
+    </script>
+</body>
+</html> 

@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notifications | VTU Consortium Digital Library</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="top-bar">
+            <div class="container">
+                <div class="logo-section">
+                    <img src="logo.jpeg" alt="VTU Logo" class="logo-img">
+                    <span class="brand">VTU Consortium Digital Library</span>
+                </div>
+                <div class="contact-info">
+                    <span>Email: library@vtu.ac.in</span>
+                    <span>Phone: +91-831-2498234</span>
+                </div>
+            </div>
+        </div>
+        <nav>
+            <div class="container">
+                <div class="logo">
+                    <i class="fas fa-book"></i>
+                    <span class="neon-text">Library Portal</span>
+                </div>
+                <div class="mobile-controls">
+                    <button id="search-toggle"><i class="fas fa-search"></i></button>
+                    <button id="menu-toggle"><i class="fas fa-bars"></i></button>
+                </div>
+                <div class="nav-links">
+                    <a href="index.html">Home</a>
+                    <a href="e-resources.html">E-Resources</a>
+                    <a href="journals.html">Journals</a>
+                    <a href="notifications.html" class="active">
+                        <i class="fas fa-bell"></i> Notifications
+                    </a>
+                    <div class="auth-buttons">
+                        <div class="dropdown">
+                            <button class="dropdown-btn btn-login">Login <i class="fas fa-caret-down"></i></button>
+                            <div class="dropdown-content">
+                                <a href="login.html?type=student">Student Login</a>
+                                <a href="login.html?type=librarian">Librarian Login</a>
+                                <a href="login.html?type=committee">Committee Member Login</a>
+                                <a href="login.html?type=principal">Principal Login</a>
+                                <a href="login.html?type=admin">Admin Login</a>
+                            </div>
+                        </div>
+                        <a href="signup.html" class="btn-signup">Signup</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <div id="mobile-search" class="hidden">
+            <div class="container">
+                <div class="search-box">
+                    <input type="text" placeholder="Search resources...">
+                    <i class="fas fa-search"></i>
+                </div>
+            </div>
+        </div>
+        <div id="mobile-menu" class="hidden">
+            <div class="container">
+                <a href="index.html">
+                    <i class="fas fa-home"></i> Home
+                </a>
+                <a href="e-resources.html">
+                    <i class="fas fa-graduation-cap"></i> E-Resources
+                </a>
+                <a href="journals.html">
+                    <i class="fas fa-book"></i> Journals
+                </a>
+                <a href="notifications.html" class="active">
+                    <i class="fas fa-bell"></i> Notifications
+                </a>
+                <div class="dropdown mobile-dropdown">
+                    <a href="#" class="mobile-login dropdown-btn">
+                        <i class="fas fa-user"></i> Login <i class="fas fa-caret-down"></i>
+                    </a>
+                    <div class="dropdown-content">
+                        <a href="login.html?type=student">Student Login</a>
+                        <a href="login.html?type=librarian">Librarian Login</a>
+                        <a href="login.html?type=committee">Committee Member Login</a>
+                        <a href="login.html?type=principal">Principal Login</a>
+                        <a href="login.html?type=admin">Admin Login</a>
+                    </div>
+                </div>
+                <a href="signup.html" class="mobile-signup">
+                    Signup
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="page-header" style="background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('vtu-banner-1a-1516x552.jpg');">
+            <div class="container">
+                <h1>Notifications & Announcements</h1>
+                <p>Stay updated with the latest news, events, and announcements from VTU Consortium Digital Library.</p>
+            </div>
+        </section>
+
+        <section class="notifications-section">
+            <div class="container">
+                <div class="notifications-filter">
+                    <div class="filter-options">
+                        <button class="filter-btn active" data-filter="all">All</button>
+                        <button class="filter-btn" data-filter="general">General</button>
+                        <button class="filter-btn" data-filter="academic">Academic</button>
+                        <button class="filter-btn" data-filter="events">Events</button>
+                    </div>
+                    <div class="search-filter">
+                        <input type="text" id="notification-search" placeholder="Search notifications...">
+                        <button><i class="fas fa-search"></i></button>
+                    </div>
+                </div>
+
+                <div class="notifications-list">
+                    <div class="notification-item" data-type="academic">
+                        <div class="notification-icon academic">
+                            <i class="fas fa-graduation-cap"></i>
+                        </div>
+                        <div class="notification-content">
+                            <div class="notification-header">
+                                <h3>New Journals Added</h3>
+                                <span class="notification-date">May 15, 2023</span>
+                            </div>
+                            <p>Over 500 new scientific journals have been added to our collection, including publications from IEEE, ACM, and Springer.</p>
+                            <div class="notification-actions">
+                                <a href="#" class="notification-link">View Details</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="notification-item" data-type="events">
+                        <div class="notification-icon events">
+                            <i class="fas fa-calendar-alt"></i>
+                        </div>
+                        <div class="notification-content">
+                            <div class="notification-header">
+                                <h3>Workshop on Research Methodology</h3>
+                                <span class="notification-date">May 10, 2023</span>
+                            </div>
+                            <p>Join us for a two-day workshop on advanced research methodology conducted by Dr. Ramesh Kumar from IISc Bangalore.</p>
+                            <div class="notification-details">
+                                <span><i class="fas fa-clock"></i> 10:00 AM - 4:00 PM</span>
+                                <span><i class="fas fa-map-marker-alt"></i> Main Campus Auditorium</span>
+                            </div>
+                            <div class="notification-actions">
+                                <a href="#" class="notification-link">Register Now</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="notification-item" data-type="general">
+                        <div class="notification-icon general">
+                            <i class="fas fa-info-circle"></i>
+                        </div>
+                        <div class="notification-content">
+                            <div class="notification-header">
+                                <h3>Extended Library Hours During Exams</h3>
+                                <span class="notification-date">May 5, 2023</span>
+                            </div>
+                            <p>The digital library will be accessible 24/7 during the examination period from May 20 to June 15, 2023.</p>
+                            <div class="notification-actions">
+                                <a href="#" class="notification-link">View Details</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="notification-item" data-type="academic">
+                        <div class="notification-icon academic">
+                            <i class="fas fa-book"></i>
+                        </div>
+                        <div class="notification-content">
+                            <div class="notification-header">
+                                <h3>New E-Books Collection</h3>
+                                <span class="notification-date">April 28, 2023</span>
+                            </div>
+                            <p>We've added a new collection of 1000+ e-books on Computer Science, Electronics, and Mechanical Engineering subjects.</p>
+                            <div class="notification-actions">
+                                <a href="#" class="notification-link">Browse Collection</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="notification-item" data-type="events">
+                        <div class="notification-icon events">
+                            <i class="fas fa-users"></i>
+                        </div>
+                        <div class="notification-content">
+                            <div class="notification-header">
+                                <h3>Annual Library Day Celebration</h3>
+                                <span class="notification-date">April 20, 2023</span>
+                            </div>
+                            <p>Join us for the annual library day celebration with guest lectures, book exhibitions, and cultural programs.</p>
+                            <div class="notification-details">
+                                <span><i class="fas fa-clock"></i> 9:00 AM - 6:00 PM</span>
+                                <span><i class="fas fa-map-marker-alt"></i> University Cultural Center</span>
+                            </div>
+                            <div class="notification-actions">
+                                <a href="#" class="notification-link">View Schedule</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="pagination">
+                    <a href="#" class="active">1</a>
+                    <a href="#">2</a>
+                    <a href="#">3</a>
+                    <a href="#">4</a>
+                    <a href="#">5</a>
+                    <a href="#" class="next"><i class="fas fa-angle-right"></i></a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-top">
+            <div class="container">
+                <div class="footer-columns">
+                    <div class="footer-column">
+                        <h3>About Us</h3>
+                        <p>VTU Consortium Digital Library provides access to a wide range of academic resources for students, faculty, and researchers.</p>
+                    </div>
+                    <div class="footer-column">
+                        <h3>Quick Links</h3>
+                        <ul>
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="e-resources.html">E-Resources</a></li>
+                            <li><a href="journals.html">Journals</a></li>
+                            <li><a href="notifications.html">Notifications</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h3>Contact Us</h3>
+                        <ul class="contact-info">
+                            <li><i class="fas fa-map-marker-alt"></i> VTU Main Campus, Belagavi, Karnataka</li>
+                            <li><i class="fas fa-phone"></i> +91-831-2498234</li>
+                            <li><i class="fas fa-envelope"></i> library@vtu.ac.in</li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h3>Follow Us</h3>
+                        <div class="social-links">
+                            <a href="#"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                            <a href="#"><i class="fab fa-instagram"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="container">
+                <p>&copy; 2023 VTU Consortium Digital Library. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script>
+        // Notification filtering
+        document.addEventListener('DOMContentLoaded', function() {
+            const filterButtons = document.querySelectorAll('.filter-btn');
+            const notificationItems = document.querySelectorAll('.notification-item');
+            const searchInput = document.getElementById('notification-search');
+            
+            // Filter by button click
+            filterButtons.forEach(button => {
+                button.addEventListener('click', function() {
+                    // Update active button
+                    filterButtons.forEach(btn => btn.classList.remove('active'));
+                    this.classList.add('active');
+                    
+                    const filterValue = this.getAttribute('data-filter');
+                    
+                    notificationItems.forEach(item => {
+                        if (filterValue === 'all' || item.getAttribute('data-type') === filterValue) {
+                            item.style.display = 'flex';
+                        } else {
+                            item.style.display = 'none';
+                        }
+                    });
+                });
+            });
+            
+            // Filter by search
+            searchInput.addEventListener('keyup', function() {
+                const searchValue = this.value.toLowerCase();
+                
+                notificationItems.forEach(item => {
+                    const title = item.querySelector('h3').textContent.toLowerCase();
+                    const content = item.querySelector('p').textContent.toLowerCase();
+                    
+                    if (title.includes(searchValue) || content.includes(searchValue)) {
+                        item.style.display = 'flex';
+                    } else {
+                        item.style.display = 'none';
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+</html> 

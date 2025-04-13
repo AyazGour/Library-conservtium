@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VTU Consortium Digital Library</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="top-bar">
+            <div class="container">
+                <div class="logo-section">
+                    <img src="logo.jpeg" alt="VTU Logo" class="logo-img">
+                    <span class="brand">VTU Consortium Digital Library</span>
+                </div>
+                <div class="contact-info">
+                    <span>Email: library@vtu.ac.in</span>
+                    <span>Phone: +91-831-2498234</span>
+                </div>
+            </div>
+        </div>
+        <nav>
+            <div class="container">
+                <div class="logo">
+                    <i class="fas fa-book"></i>
+                    <span class="neon-text">Library Portal</span>
+                </div>
+                <div class="mobile-controls">
+                    <button id="search-toggle"><i class="fas fa-search"></i></button>
+                    <button id="menu-toggle"><i class="fas fa-bars"></i></button>
+                </div>
+                <div class="nav-links">
+                    <a href="index.html" class="active">Home</a>
+                    <a href="e-resources.html">E-Resources</a>
+                    <a href="journals.html">Journals</a>
+                    <a href="notifications.html">
+                        <i class="fas fa-bell"></i> Notifications
+                    </a>
+                    <div class="auth-buttons">
+                        <div class="dropdown">
+                            <button class="dropdown-btn btn-login">Login <i class="fas fa-caret-down"></i></button>
+                            <div class="dropdown-content">
+                                <a href="login.html?type=student">Student Login</a>
+                                <a href="login.html?type=librarian">Librarian Login</a>
+                                <a href="login.html?type=committee">Committee Member Login</a>
+                                <a href="login.html?type=principal">Principal Login</a>
+                                <a href="login.html?type=admin">Admin Login</a>
+                            </div>
+                        </div>
+                        <a href="signup.html" class="btn-signup">Signup</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <div id="mobile-search" class="hidden">
+            <div class="container">
+                <div class="search-box">
+                    <input type="text" placeholder="Search resources...">
+                    <i class="fas fa-search"></i>
+                </div>
+            </div>
+        </div>
+        <div id="mobile-menu" class="hidden">
+            <div class="container">
+                <a href="index.html">
+                    <i class="fas fa-home"></i> Home
+                </a>
+                <a href="e-resources.html">
+                    <i class="fas fa-graduation-cap"></i> E-Resources
+                </a>
+                <a href="journals.html">
+                    <i class="fas fa-book"></i> Journals
+                </a>
+                <a href="notifications.html">
+                    <i class="fas fa-bell"></i> Notifications
+                </a>
+                <div class="dropdown mobile-dropdown">
+                    <a href="#" class="mobile-login dropdown-btn">
+                        <i class="fas fa-user"></i> Login <i class="fas fa-caret-down"></i>
+                    </a>
+                    <div class="dropdown-content">
+                        <a href="login.html?type=student">Student Login</a>
+                        <a href="login.html?type=librarian">Librarian Login</a>
+                        <a href="login.html?type=committee">Committee Member Login</a>
+                        <a href="login.html?type=principal">Principal Login</a>
+                        <a href="login.html?type=admin">Admin Login</a>
+                    </div>
+                </div>
+                <a href="signup.html" class="mobile-signup">
+                    Signup
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero" style="background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('vtu-banner-1a-1516x552.jpg');">
+            <div class="container">
+                <h1>Welcome to VTU Consortium Digital Library</h1>
+                <p>Access thousands of academic resources, research papers, and e-books to support your educational journey.</p>
+                <div class="search-bar">
+                    <input type="text" placeholder="Search for books, journals, and more...">
+                    <button type="submit"><i class="fas fa-search"></i> Search</button>
+                </div>
+                <div class="quick-links">
+                    <a href="#" class="quick-link">
+                        <i class="fas fa-book"></i>
+                        <span>E-Books</span>
+                    </a>
+                    <a href="#" class="quick-link">
+                        <i class="fas fa-newspaper"></i>
+                        <span>Journals</span>
+                    </a>
+                    <a href="#" class="quick-link">
+                        <i class="fas fa-file-alt"></i>
+                        <span>Research Papers</span>
+                    </a>
+                    <a href="#" class="quick-link">
+                        <i class="fas fa-video"></i>
+                        <span>Video Lectures</span>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <section class="features">
+            <div class="container">
+                <h2>Library Features</h2>
+                <div class="feature-cards">
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-book-reader"></i>
+                        </div>
+                        <h3>Digital Reading</h3>
+                        <p>Access thousands of e-books and digital resources from anywhere, anytime.</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-download"></i>
+                        </div>
+                        <h3>Download Resources</h3>
+                        <p>Download research papers, journals and educational materials for offline use.</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-users"></i>
+                        </div>
+                        <h3>Collaborative Research</h3>
+                        <p>Connect with peers and participate in collaborative research projects.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="campus-section">
+            <div class="container">
+                <h2>Our Campus Libraries</h2>
+                <div class="campus-grid">
+                    <div class="campus-card">
+                        <img src="campys.jpeg" alt="VTU Main Campus Library">
+                        <div class="campus-content">
+                            <h3>Main Campus Library</h3>
+                            <p>Explore our state-of-the-art main campus library with thousands of books and digital resources.</p>
+                            <a href="#" class="campus-link">Learn More</a>
+                        </div>
+                    </div>
+                    <div class="campus-card">
+                        <img src="white house.jpg" alt="Science & Technology Library">
+                        <div class="campus-content">
+                            <h3>Science & Technology Building</h3>
+                            <p>A specialized library for science and technology resources with the latest research materials.</p>
+                            <a href="#" class="campus-link">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="latest-resources">
+            <div class="container">
+                <h2>Latest Resources</h2>
+                <div class="resources-slider">
+                    <div class="resource-item">
+                        <div class="resource-image">
+                            <img src="vtu_library.png" alt="Resource 1">
+                        </div>
+                        <div class="resource-details">
+                            <h3>Advanced Computer Networks</h3>
+                            <p>By Andrew S. Tanenbaum</p>
+                            <div class="resource-meta">
+                                <span><i class="fas fa-calendar-alt"></i> 2023</span>
+                                <span><i class="fas fa-download"></i> 1,234</span>
+                            </div>
+                            <a href="#" class="resource-link">View Details</a>
+                        </div>
+                    </div>
+                    <div class="resource-item">
+                        <div class="resource-image">
+                            <img src="large_49_86d596e72d_008681bc49.png" alt="Resource 2">
+                        </div>
+                        <div class="resource-details">
+                            <h3>Machine Learning Algorithms</h3>
+                            <p>By John D. Kelleher</p>
+                            <div class="resource-meta">
+                                <span><i class="fas fa-calendar-alt"></i> 2022</span>
+                                <span><i class="fas fa-download"></i> 2,567</span>
+                            </div>
+                            <a href="#" class="resource-link">View Details</a>
+                        </div>
+                    </div>
+                    <div class="resource-item">
+                        <div class="resource-image">
+                            <img src="vtu.avif" alt="Resource 3">
+                        </div>
+                        <div class="resource-details">
+                            <h3>Software Engineering Principles</h3>
+                            <p>By Ian Sommerville</p>
+                            <div class="resource-meta">
+                                <span><i class="fas fa-calendar-alt"></i> 2021</span>
+                                <span><i class="fas fa-download"></i> 3,789</span>
+                            </div>
+                            <a href="#" class="resource-link">View Details</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="how-to-use">
+            <div class="container">
+                <h2>How to Use the Library</h2>
+                <div class="steps">
+                    <div class="step">
+                        <div class="step-number">1</div>
+                        <div class="step-content">
+                            <h3>Create an Account</h3>
+                            <p>Sign up with your college email ID to create your library account.</p>
+                        </div>
+                    </div>
+                    <div class="step">
+                        <div class="step-number">2</div>
+                        <div class="step-content">
+                            <h3>Browse Resources</h3>
+                            <p>Search for books, journals, or specific topics you're interested in.</p>
+                        </div>
+                    </div>
+                    <div class="step">
+                        <div class="step-number">3</div>
+                        <div class="step-content">
+                            <h3>Access Content</h3>
+                            <p>Read online or download content for offline access on your devices.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="news-events">
+            <div class="container">
+                <h2>Library News & Events</h2>
+                <div class="news-grid">
+                    <div class="news-item">
+                        <div class="news-date">
+                            <span class="day">15</span>
+                            <span class="month">Apr</span>
+                        </div>
+                        <div class="news-content">
+                            <h3>New Scientific Journals Added</h3>
+                            <p>Over 500 new scientific journals have been added to our collection.</p>
+                            <a href="#" class="read-more">Read More</a>
+                        </div>
+                    </div>
+                    <div class="news-item">
+                        <div class="news-date">
+                            <span class="day">10</span>
+                            <span class="month">Apr</span>
+                        </div>
+                        <div class="news-content">
+                            <h3>Workshop on Research Methodology</h3>
+                            <p>Join us for a two-day workshop on advanced research methodology.</p>
+                            <a href="#" class="read-more">Read More</a>
+                        </div>
+                    </div>
+                    <div class="news-item">
+                        <div class="news-date">
+                            <span class="day">05</span>
+                            <span class="month">Apr</span>
+                        </div>
+                        <div class="news-content">
+                            <h3>Extended Library Hours During Exams</h3>
+                            <p>The digital library will be accessible 24/7 during the examination period.</p>
+                            <a href="#" class="read-more">Read More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="view-all">
+                    <a href="news.html" class="btn-view-all">View All News <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-top">
+            <div class="container">
+                <div class="footer-columns">
+                    <div class="footer-column">
+                        <h3>About Us</h3>
+                        <p>VTU Consortium Digital Library provides access to a wide range of academic resources for students, faculty, and researchers.</p>
+                    </div>
+                    <div class="footer-column">
+                        <h3>Quick Links</h3>
+                        <ul>
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="e-resources.html">E-Resources</a></li>
+                            <li><a href="journals.html">Journals</a></li>
+                            <li><a href="notifications.html">Notifications</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h3>Contact Us</h3>
+                        <ul class="contact-info">
+                            <li><i class="fas fa-map-marker-alt"></i> VTU Main Campus, Belagavi, Karnataka</li>
+                            <li><i class="fas fa-phone"></i> +91-831-2498234</li>
+                            <li><i class="fas fa-envelope"></i> library@vtu.ac.in</li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h3>Follow Us</h3>
+                        <div class="social-links">
+                            <a href="#"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                            <a href="#"><i class="fab fa-instagram"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="container">
+                <p>&copy; 2023 VTU Consortium Digital Library. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html> 

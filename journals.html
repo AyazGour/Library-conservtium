@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Journals | VTU Consortium Digital Library</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="top-bar">
+            <div class="container">
+                <div class="logo-section">
+                    <img src="logo.jpeg" alt="VTU Logo" class="logo-img">
+                    <span class="brand">VTU Consortium Digital Library</span>
+                </div>
+                <div class="contact-info">
+                    <span>Email: library@vtu.ac.in</span>
+                    <span>Phone: +91-831-2498234</span>
+                </div>
+            </div>
+        </div>
+        <nav>
+            <div class="container">
+                <div class="logo">
+                    <i class="fas fa-book"></i>
+                    <span class="neon-text">Library Portal</span>
+                </div>
+                <div class="mobile-controls">
+                    <button id="search-toggle"><i class="fas fa-search"></i></button>
+                    <button id="menu-toggle"><i class="fas fa-bars"></i></button>
+                </div>
+                <div class="nav-links">
+                    <a href="index.html">Home</a>
+                    <a href="e-resources.html">E-Resources</a>
+                    <a href="journals.html" class="active">Journals</a>
+                    <a href="notifications.html">
+                        <i class="fas fa-bell"></i> Notifications
+                    </a>
+                    <div class="auth-buttons">
+                        <div class="dropdown">
+                            <button class="dropdown-btn btn-login">Login <i class="fas fa-caret-down"></i></button>
+                            <div class="dropdown-content">
+                                <a href="login.html?type=student">Student Login</a>
+                                <a href="login.html?type=librarian">Librarian Login</a>
+                                <a href="login.html?type=committee">Committee Member Login</a>
+                                <a href="login.html?type=principal">Principal Login</a>
+                                <a href="login.html?type=admin">Admin Login</a>
+                            </div>
+                        </div>
+                        <a href="signup.html" class="btn-signup">Signup</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <div id="mobile-search" class="hidden">
+            <div class="container">
+                <div class="search-box">
+                    <input type="text" placeholder="Search resources...">
+                    <i class="fas fa-search"></i>
+                </div>
+            </div>
+        </div>
+        <div id="mobile-menu" class="hidden">
+            <div class="container">
+                <a href="index.html">
+                    <i class="fas fa-home"></i> Home
+                </a>
+                <a href="e-resources.html">
+                    <i class="fas fa-graduation-cap"></i> E-Resources
+                </a>
+                <a href="journals.html" class="active">
+                    <i class="fas fa-book"></i> Journals
+                </a>
+                <a href="notifications.html">
+                    <i class="fas fa-bell"></i> Notifications
+                </a>
+                <div class="dropdown mobile-dropdown">
+                    <a href="#" class="mobile-login dropdown-btn">
+                        <i class="fas fa-user"></i> Login <i class="fas fa-caret-down"></i>
+                    </a>
+                    <div class="dropdown-content">
+                        <a href="login.html?type=student">Student Login</a>
+                        <a href="login.html?type=librarian">Librarian Login</a>
+                        <a href="login.html?type=committee">Committee Member Login</a>
+                        <a href="login.html?type=principal">Principal Login</a>
+                        <a href="login.html?type=admin">Admin Login</a>
+                    </div>
+                </div>
+                <a href="signup.html" class="mobile-signup">
+                    Signup
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="page-header" style="background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('vtu-banner-1a-1516x552.jpg');">
+            <div class="container">
+                <h1>Academic Journals</h1>
+                <p>Access thousands of peer-reviewed journals from top publishers worldwide.</p>
+                <div class="search-bar journal-search">
+                    <input type="text" placeholder="Search for journals by title, subject or publisher...">
+                    <button type="submit"><i class="fas fa-search"></i> Search</button>
+                </div>
+            </div>
+        </section>
+
+        <section class="journals-section">
+            <div class="container">
+                <div class="journals-filter">
+                    <div class="filter-categories">
+                        <h3>Browse by Subject</h3>
+                        <ul class="category-list">
+                            <li class="active"><a href="#">All Subjects</a></li>
+                            <li><a href="#">Engineering</a></li>
+                            <li><a href="#">Computer Science</a></li>
+                            <li><a href="#">Mechanical</a></li>
+                            <li><a href="#">Electrical</a></li>
+                            <li><a href="#">Civil</a></li>
+                            <li><a href="#">Electronics</a></li>
+                            <li><a href="#">Management</a></li>
+                            <li><a href="#">Sciences</a></li>
+                            <li><a href="#">Mathematics</a></li>
+                            <li><a href="#">Humanities</a></li>
+                        </ul>
+                        
+                        <h3>Publishers</h3>
+                        <div class="filter-checkboxes">
+                            <label class="checkbox-item">
+                                <input type="checkbox" checked> IEEE
+                            </label>
+                            <label class="checkbox-item">
+                                <input type="checkbox" checked> Springer
+                            </label>
+                            <label class="checkbox-item">
+                                <input type="checkbox" checked> Elsevier
+                            </label>
+                            <label class="checkbox-item">
+                                <input type="checkbox" checked> ACM
+                            </label>
+                            <label class="checkbox-item">
+                                <input type="checkbox" checked> Wiley
+                            </label>
+                            <label class="checkbox-item">
+                                <input type="checkbox" checked> Taylor & Francis
+                            </label>
+                        </div>
+                        
+                        <h3>Access Type</h3>
+                        <div class="filter-checkboxes">
+                            <label class="checkbox-item">
+                                <input type="checkbox" checked> Open Access
+                            </label>
+                            <label class="checkbox-item">
+                                <input type="checkbox" checked> VTU Subscribed
+                            </label>
+                        </div>
+                    </div>
+                    
+                    <div class="journals-content">
+                        <div class="journals-controls">
+                            <div class="journals-count">
+                                Showing <span>48</span> of <span>1,245</span> journals
+                            </div>
+                            <div class="journals-sort">
+                                <label for="sort-select">Sort by:</label>
+                                <select id="sort-select">
+                                    <option value="relevance">Relevance</option>
+                                    <option value="newest">Newest</option>
+                                    <option value="title-asc">Title (A-Z)</option>
+                                    <option value="title-desc">Title (Z-A)</option>
+                                    <option value="popular">Popularity</option>
+                                </select>
+                            </div>
+                        </div>
+                        
+                        <div class="journals-grid">
+                            <div class="journal-card">
+                                <div class="journal-publisher">IEEE</div>
+                                <h3>IEEE Transactions on Computers</h3>
+                                <p class="journal-description">A monthly publication that publishes research in computer architecture, design, and organization.</p>
+                                <div class="journal-meta">
+                                    <span class="journal-subject">Computer Science</span>
+                                    <span class="journal-impact">Impact Factor: 3.13</span>
+                                </div>
+                                <a href="#" class="journal-link">View Journal <i class="fas fa-arrow-right"></i></a>
+                            </div>
+                            
+                            <div class="journal-card">
+                                <div class="journal-publisher">Springer</div>
+                                <h3>Journal of Machine Learning Research</h3>
+                                <p class="journal-description">Focused on machine learning, artificial intelligence, and related fields.</p>
+                                <div class="journal-meta">
+                                    <span class="journal-subject">Computer Science</span>
+                                    <span class="journal-impact">Impact Factor: 4.91</span>
+                                </div>
+                                <a href="#" class="journal-link">View Journal <i class="fas fa-arrow-right"></i></a>
+                            </div>
+                            
+                            <div class="journal-card">
+                                <div class="journal-publisher">Elsevier</div>
+                                <h3>Renewable Energy</h3>
+                                <p class="journal-description">Discusses advances in renewable energy research, development, and implementation.</p>
+                                <div class="journal-meta">
+                                    <span class="journal-subject">Electrical Engineering</span>
+                                    <span class="journal-impact">Impact Factor: 8.71</span>
+                                </div>
+                                <a href="#" class="journal-link">View Journal <i class="fas fa-arrow-right"></i></a>
+                            </div>
+                            
+                            <div class="journal-card">
+                                <div class="journal-publisher">ACM</div>
+                                <h3>ACM Transactions on Graphics</h3>
+                                <p class="journal-description">Covers research in computer graphics and interactive techniques.</p>
+                                <div class="journal-meta">
+                                    <span class="journal-subject">Computer Graphics</span>
+                                    <span class="journal-impact">Impact Factor: 5.44</span>
+                                </div>
+                                <a href="#" class="journal-link">View Journal <i class="fas fa-arrow-right"></i></a>
+                            </div>
+                            
+                            <div class="journal-card">
+                                <div class="journal-publisher">Wiley</div>
+                                <h3>Advanced Materials</h3>
+                                <p class="journal-description">Covers research in materials science and engineering.</p>
+                                <div class="journal-meta">
+                                    <span class="journal-subject">Material Science</span>
+                                    <span class="journal-impact">Impact Factor: 29.37</span>
+                                </div>
+                                <a href="#" class="journal-link">View Journal <i class="fas fa-arrow-right"></i></a>
+                            </div>
+                            
+                            <div class="journal-card">
+                                <div class="journal-publisher">IEEE</div>
+                                <h3>IEEE Transactions on Neural Networks</h3>
+                                <p class="journal-description">Research on neural networks and related fields of computational intelligence.</p>
+                                <div class="journal-meta">
+                                    <span class="journal-subject">Computer Science</span>
+                                    <span class="journal-impact">Impact Factor: 10.45</span>
+                                </div>
+                                <a href="#" class="journal-link">View Journal <i class="fas fa-arrow-right"></i></a>
+                            </div>
+                            
+                            <div class="journal-card">
+                                <div class="journal-publisher">Taylor & Francis</div>
+                                <h3>International Journal of Production Research</h3>
+                                <p class="journal-description">Covers manufacturing and production engineering research.</p>
+                                <div class="journal-meta">
+                                    <span class="journal-subject">Mechanical Engineering</span>
+                                    <span class="journal-impact">Impact Factor: 8.57</span>
+                                </div>
+                                <a href="#" class="journal-link">View Journal <i class="fas fa-arrow-right"></i></a>
+                            </div>
+                            
+                            <div class="journal-card">
+                                <div class="journal-publisher">Springer</div>
+                                <h3>Journal of Civil Engineering</h3>
+                                <p class="journal-description">Research on civil engineering, construction, and structural analysis.</p>
+                                <div class="journal-meta">
+                                    <span class="journal-subject">Civil Engineering</span>
+                                    <span class="journal-impact">Impact Factor: 3.82</span>
+                                </div>
+                                <a href="#" class="journal-link">View Journal <i class="fas fa-arrow-right"></i></a>
+                            </div>
+                        </div>
+                        
+                        <div class="pagination">
+                            <a href="#" class="active">1</a>
+                            <a href="#">2</a>
+                            <a href="#">3</a>
+                            <a href="#">4</a>
+                            <a href="#">5</a>
+                            <a href="#" class="next"><i class="fas fa-angle-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-top">
+            <div class="container">
+                <div class="footer-columns">
+                    <div class="footer-column">
+                        <h3>About Us</h3>
+                        <p>VTU Consortium Digital Library provides access to a wide range of academic resources for students, faculty, and researchers.</p>
+                    </div>
+                    <div class="footer-column">
+                        <h3>Quick Links</h3>
+                        <ul>
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="e-resources.html">E-Resources</a></li>
+                            <li><a href="journals.html">Journals</a></li>
+                            <li><a href="notifications.html">Notifications</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h3>Contact Us</h3>
+                        <ul class="contact-info">
+                            <li><i class="fas fa-map-marker-alt"></i> VTU Main Campus, Belagavi, Karnataka</li>
+                            <li><i class="fas fa-phone"></i> +91-831-2498234</li>
+                            <li><i class="fas fa-envelope"></i> library@vtu.ac.in</li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h3>Follow Us</h3>
+                        <div class="social-links">
+                            <a href="#"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                            <a href="#"><i class="fab fa-instagram"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="container">
+                <p>&copy; 2023 VTU Consortium Digital Library. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html> 

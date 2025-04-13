@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>404 - Page Not Found | VTU Consortium Digital Library</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <style>
+        .error-container {
+            text-align: center;
+            padding: 100px 20px;
+            min-height: 60vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        .error-code {
+            font-size: 8rem;
+            font-weight: bold;
+            color: #ff6600;
+            margin-bottom: 10px;
+            line-height: 1;
+        }
+        
+        .error-message {
+            font-size: 2rem;
+            margin-bottom: 20px;
+            color: #333;
+        }
+        
+        .error-description {
+            font-size: 1.1rem;
+            color: #666;
+            max-width: 600px;
+            margin: 0 auto 30px;
+        }
+        
+        .back-home {
+            display: inline-block;
+            background-color: #ff6600;
+            color: white;
+            padding: 12px 25px;
+            border-radius: 4px;
+            font-weight: 500;
+            transition: background-color 0.3s;
+        }
+        
+        .back-home:hover {
+            background-color: #e65c00;
+        }
+        
+        .error-icon {
+            font-size: 5rem;
+            color: #ff6600;
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="top-bar">
+            <div class="container">
+                <div class="logo-section">
+                    <i class="fas fa-university"></i>
+                    <span class="brand">VTU Consortium Digital Library</span>
+                </div>
+                <div class="contact-info">
+                    <span>Email: library@vtu.ac.in</span>
+                    <span>Phone: +91-831-2498234</span>
+                </div>
+            </div>
+        </div>
+        <nav>
+            <div class="container">
+                <div class="logo">
+                    <i class="fas fa-book"></i>
+                    <span class="neon-text">Library Portal</span>
+                </div>
+                <div class="mobile-controls">
+                    <button id="search-toggle"><i class="fas fa-search"></i></button>
+                    <button id="menu-toggle"><i class="fas fa-bars"></i></button>
+                </div>
+                <div class="nav-links">
+                    <a href="index.html">Home</a>
+                    <a href="e-resources.html">E-Resources</a>
+                    <a href="journals.html">Journals</a>
+                    <a href="notifications.html">
+                        <i class="fas fa-bell"></i> Notifications
+                    </a>
+                    <div class="auth-buttons">
+                        <a href="login.html" class="btn-login">Login</a>
+                        <a href="signup.html" class="btn-signup">Signup</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <div class="error-container">
+            <i class="fas fa-book-dead error-icon"></i>
+            <div class="error-code">404</div>
+            <h1 class="error-message">Page Not Found</h1>
+            <p class="error-description">
+                The page you are looking for might have been removed, had its name changed, 
+                or is temporarily unavailable.
+            </p>
+            <a href="index.html" class="back-home">
+                <i class="fas fa-home"></i> Back to Home
+            </a>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-top">
+            <div class="container">
+                <div class="footer-columns">
+                    <div class="footer-column">
+                        <h3>About Us</h3>
+                        <p>VTU Consortium Digital Library provides access to a wide range of academic resources for students, faculty, and researchers.</p>
+                    </div>
+                    <div class="footer-column">
+                        <h3>Quick Links</h3>
+                        <ul>
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="e-resources.html">E-Resources</a></li>
+                            <li><a href="journals.html">Journals</a></li>
+                            <li><a href="notifications.html">Notifications</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h3>Contact Us</h3>
+                        <ul class="contact-info">
+                            <li><i class="fas fa-map-marker-alt"></i> VTU Main Campus, Belagavi, Karnataka</li>
+                            <li><i class="fas fa-phone"></i> +91-831-2498234</li>
+                            <li><i class="fas fa-envelope"></i> library@vtu.ac.in</li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h3>Follow Us</h3>
+                        <div class="social-links">
+                            <a href="#"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                            <a href="#"><i class="fab fa-instagram"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="container">
+                <p>&copy; 2023 VTU Consortium Digital Library. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html> 

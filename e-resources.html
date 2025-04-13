@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-Resources | VTU Consortium Digital Library</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="top-bar">
+            <div class="container">
+                <div class="logo-section">
+                    <img src="logo.jpeg" alt="VTU Logo" class="logo-img">
+                    <span class="brand">VTU Consortium Digital Library</span>
+                </div>
+                <div class="contact-info">
+                    <span>Email: library@vtu.ac.in</span>
+                    <span>Phone: +91-831-2498234</span>
+                </div>
+            </div>
+        </div>
+        <nav>
+            <div class="container">
+                <div class="logo">
+                    <i class="fas fa-book"></i>
+                    <span class="neon-text">Library Portal</span>
+                </div>
+                <div class="mobile-controls">
+                    <button id="search-toggle"><i class="fas fa-search"></i></button>
+                    <button id="menu-toggle"><i class="fas fa-bars"></i></button>
+                </div>
+                <div class="nav-links">
+                    <a href="index.html">Home</a>
+                    <a href="e-resources.html" class="active">E-Resources</a>
+                    <a href="journals.html">Journals</a>
+                    <a href="notifications.html">
+                        <i class="fas fa-bell"></i> Notifications
+                    </a>
+                    <div class="auth-buttons">
+                        <div class="dropdown">
+                            <button class="dropdown-btn btn-login">Login <i class="fas fa-caret-down"></i></button>
+                            <div class="dropdown-content">
+                                <a href="login.html?type=student">Student Login</a>
+                                <a href="login.html?type=librarian">Librarian Login</a>
+                                <a href="login.html?type=committee">Committee Member Login</a>
+                                <a href="login.html?type=principal">Principal Login</a>
+                                <a href="login.html?type=admin">Admin Login</a>
+                            </div>
+                        </div>
+                        <a href="signup.html" class="btn-signup">Signup</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <div id="mobile-search" class="hidden">
+            <div class="container">
+                <div class="search-box">
+                    <input type="text" placeholder="Search resources...">
+                    <i class="fas fa-search"></i>
+                </div>
+            </div>
+        </div>
+        <div id="mobile-menu" class="hidden">
+            <div class="container">
+                <a href="index.html">
+                    <i class="fas fa-home"></i> Home
+                </a>
+                <a href="e-resources.html" class="active">
+                    <i class="fas fa-graduation-cap"></i> E-Resources
+                </a>
+                <a href="journals.html">
+                    <i class="fas fa-book"></i> Journals
+                </a>
+                <a href="notifications.html">
+                    <i class="fas fa-bell"></i> Notifications
+                </a>
+                <div class="dropdown mobile-dropdown">
+                    <a href="#" class="mobile-login dropdown-btn">
+                        <i class="fas fa-user"></i> Login <i class="fas fa-caret-down"></i>
+                    </a>
+                    <div class="dropdown-content">
+                        <a href="login.html?type=student">Student Login</a>
+                        <a href="login.html?type=librarian">Librarian Login</a>
+                        <a href="login.html?type=committee">Committee Member Login</a>
+                        <a href="login.html?type=principal">Principal Login</a>
+                        <a href="login.html?type=admin">Admin Login</a>
+                    </div>
+                </div>
+                <a href="signup.html" class="mobile-signup">
+                    Signup
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="page-header" style="background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('vtu-banner-1a-1516x552.jpg');">
+            <div class="container">
+                <h1>E-Resources</h1>
+                <p>Discover our extensive collection of digital learning resources for your academic needs.</p>
+                <div class="search-bar e-resources-search">
+                    <input type="text" placeholder="Search for e-books, video lectures, presentations...">
+                    <button type="submit"><i class="fas fa-search"></i> Search</button>
+                </div>
+            </div>
+        </section>
+
+        <section class="resource-categories">
+            <div class="container">
+                <h2>Browse by Resource Type</h2>
+                <div class="resource-type-grid">
+                    <a href="#ebooks" class="resource-type-card">
+                        <div class="resource-type-icon">
+                            <i class="fas fa-book"></i>
+                        </div>
+                        <h3>E-Books</h3>
+                        <p>Access thousands of electronic books across various disciplines.</p>
+                    </a>
+                    <a href="#videos" class="resource-type-card">
+                        <div class="resource-type-icon">
+                            <i class="fas fa-video"></i>
+                        </div>
+                        <h3>Video Lectures</h3>
+                        <p>Watch recorded lectures from top professors and industry experts.</p>
+                    </a>
+                    <a href="#presentations" class="resource-type-card">
+                        <div class="resource-type-icon">
+                            <i class="fas fa-file-powerpoint"></i>
+                        </div>
+                        <h3>Presentations</h3>
+                        <p>Download presentation slides to enhance your learning.</p>
+                    </a>
+                    <a href="#papers" class="resource-type-card">
+                        <div class="resource-type-icon">
+                            <i class="fas fa-file-alt"></i>
+                        </div>
+                        <h3>Research Papers</h3>
+                        <p>Access scholarly articles and research publications.</p>
+                    </a>
+                    <a href="#datasets" class="resource-type-card">
+                        <div class="resource-type-icon">
+                            <i class="fas fa-database"></i>
+                        </div>
+                        <h3>Datasets</h3>
+                        <p>Find and use datasets for your research projects.</p>
+                    </a>
+                    <a href="#software" class="resource-type-card">
+                        <div class="resource-type-icon">
+                            <i class="fas fa-laptop-code"></i>
+                        </div>
+                        <h3>Software Tools</h3>
+                        <p>Access educational software and tools for academic use.</p>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <section id="ebooks" class="ebooks-section">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Featured E-Books</h2>
+                    <a href="#" class="view-all-link">View All <i class="fas fa-arrow-right"></i></a>
+                </div>
+                <div class="ebooks-grid">
+                    <div class="ebook-card">
+                        <div class="ebook-cover">
+                            <img src="vtu_library.png" alt="Book Cover">
+                            <div class="ebook-format">PDF</div>
+                        </div>
+                        <div class="ebook-details">
+                            <h3>Principles of Artificial Intelligence</h3>
+                            <p class="ebook-author">By Stuart Russell & Peter Norvig</p>
+                            <div class="ebook-info">
+                                <span><i class="fas fa-calendar-alt"></i> 2020</span>
+                                <span><i class="fas fa-download"></i> 2.4k</span>
+                            </div>
+                            <a href="#" class="ebook-link">Download</a>
+                        </div>
+                    </div>
+                    <div class="ebook-card">
+                        <div class="ebook-cover">
+                            <img src="vtu.avif" alt="Book Cover">
+                            <div class="ebook-format">EPUB</div>
+                        </div>
+                        <div class="ebook-details">
+                            <h3>Database Management Systems</h3>
+                            <p class="ebook-author">By Ramakrishnan & Gehrke</p>
+                            <div class="ebook-info">
+                                <span><i class="fas fa-calendar-alt"></i> 2019</span>
+                                <span><i class="fas fa-download"></i> 1.8k</span>
+                            </div>
+                            <a href="#" class="ebook-link">Download</a>
+                        </div>
+                    </div>
+                    <div class="ebook-card">
+                        <div class="ebook-cover">
+                            <img src="large_49_86d596e72d_008681bc49.png" alt="Book Cover">
+                            <div class="ebook-format">PDF</div>
+                        </div>
+                        <div class="ebook-details">
+                            <h3>Computer Networks: A Systems Approach</h3>
+                            <p class="ebook-author">By Larry L. Peterson & Bruce S. Davie</p>
+                            <div class="ebook-info">
+                                <span><i class="fas fa-calendar-alt"></i> 2021</span>
+                                <span><i class="fas fa-download"></i> 3.2k</span>
+                            </div>
+                            <a href="#" class="ebook-link">Download</a>
+                        </div>
+                    </div>
+                    <div class="ebook-card">
+                        <div class="ebook-cover">
+                            <img src="vtu_library.png" alt="Book Cover">
+                            <div class="ebook-format">MOBI</div>
+                        </div>
+                        <div class="ebook-details">
+                            <h3>Introduction to Algorithms</h3>
+                            <p class="ebook-author">By Cormen, Leiserson, Rivest & Stein</p>
+                            <div class="ebook-info">
+                                <span><i class="fas fa-calendar-alt"></i> 2019</span>
+                                <span><i class="fas fa-download"></i> 5.6k</span>
+                            </div>
+                            <a href="#" class="ebook-link">Download</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="videos" class="videos-section">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Popular Video Lectures</h2>
+                    <a href="#" class="view-all-link">View All <i class="fas fa-arrow-right"></i></a>
+                </div>
+                <div class="videos-grid">
+                    <div class="video-card">
+                        <div class="video-thumbnail">
+                            <img src="campys.jpeg" alt="Video Thumbnail">
+                            <div class="video-duration">45:12</div>
+                            <div class="video-play-button">
+                                <i class="fas fa-play"></i>
+                            </div>
+                        </div>
+                        <div class="video-details">
+                            <h3>Introduction to Machine Learning</h3>
+                            <p class="video-lecturer">Prof. Andrew Ng</p>
+                            <div class="video-info">
+                                <span><i class="fas fa-eye"></i> 12.4k views</span>
+                                <span><i class="fas fa-calendar-alt"></i> Apr 10, 2023</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="video-card">
+                        <div class="video-thumbnail">
+                            <img src="white house.jpg" alt="Video Thumbnail">
+                            <div class="video-duration">32:05</div>
+                            <div class="video-play-button">
+                                <i class="fas fa-play"></i>
+                            </div>
+                        </div>
+                        <div class="video-details">
+                            <h3>Advanced Data Structures</h3>
+                            <p class="video-lecturer">Prof. Rajesh Kumar</p>
+                            <div class="video-info">
+                                <span><i class="fas fa-eye"></i> 8.7k views</span>
+                                <span><i class="fas fa-calendar-alt"></i> Mar 28, 2023</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="video-card">
+                        <div class="video-thumbnail">
+                            <img src="campys.jpeg" alt="Video Thumbnail">
+                            <div class="video-duration">55:30</div>
+                            <div class="video-play-button">
+                                <i class="fas fa-play"></i>
+                            </div>
+                        </div>
+                        <div class="video-details">
+                            <h3>Fundamentals of Digital Electronics</h3>
+                            <p class="video-lecturer">Prof. Meena Sharma</p>
+                            <div class="video-info">
+                                <span><i class="fas fa-eye"></i> 6.3k views</span>
+                                <span><i class="fas fa-calendar-alt"></i> Apr 2, 2023</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="resources-stats">
+            <div class="container">
+                <div class="stats-grid">
+                    <div class="stat-item">
+                        <div class="stat-icon">
+                            <i class="fas fa-book"></i>
+                        </div>
+                        <div class="stat-number">10,000+</div>
+                        <div class="stat-label">E-Books</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-icon">
+                            <i class="fas fa-video"></i>
+                        </div>
+                        <div class="stat-number">5,000+</div>
+                        <div class="stat-label">Video Lectures</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-icon">
+                            <i class="fas fa-file-alt"></i>
+                        </div>
+                        <div class="stat-number">25,000+</div>
+                        <div class="stat-label">Research Papers</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-icon">
+                            <i class="fas fa-users"></i>
+                        </div>
+                        <div class="stat-number">50,000+</div>
+                        <div class="stat-label">Active Users</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-top">
+            <div class="container">
+                <div class="footer-columns">
+                    <div class="footer-column">
+                        <h3>About Us</h3>
+                        <p>VTU Consortium Digital Library provides access to a wide range of academic resources for students, faculty, and researchers.</p>
+                    </div>
+                    <div class="footer-column">
+                        <h3>Quick Links</h3>
+                        <ul>
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="e-resources.html">E-Resources</a></li>
+                            <li><a href="journals.html">Journals</a></li>
+                            <li><a href="notifications.html">Notifications</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h3>Contact Us</h3>
+                        <ul class="contact-info">
+                            <li><i class="fas fa-map-marker-alt"></i> VTU Main Campus, Belagavi, Karnataka</li>
+                            <li><i class="fas fa-phone"></i> +91-831-2498234</li>
+                            <li><i class="fas fa-envelope"></i> library@vtu.ac.in</li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h3>Follow Us</h3>
+                        <div class="social-links">
+                            <a href="#"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                            <a href="#"><i class="fab fa-instagram"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="container">
+                <p>&copy; 2023 VTU Consortium Digital Library. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html> 
